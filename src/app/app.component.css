@@ -57,9 +57,30 @@ nav{
     font-weight: lighter;
     border-bottom: 5px solid blue;
 }
-
-@media all and (max-width: 1030px){
-    body{
-       display: none !important;
+.arrow{
+    height:5vh;
+    width:30px;
+   
+    transform: translateY(15%);
+    display:none
+}
+.line1,.line2,.line3{
+    height:30%;
+    width:100%;
+    background-color: black;
+    margin-top: 3px;
+    border-radius: 2px;
+}
+@media screen and (max-width: 1028px){
+    .arrow{
+      display: none;
+    }
+}
+@media screen and (max-width: 1028px){
+    .nav-links{
+        display: none;
+    }
+    .arrow{
+      display: inline;
     }
 }
